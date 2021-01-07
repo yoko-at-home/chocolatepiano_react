@@ -1,0 +1,1 @@
+.horizontal_nav{display:flex;position:relative;z-index:1000}.horizontal-list{display:flex;flex-direction:row;bottom:0;margin-bottom:1rem;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;overflow-x:scroll}.horizontal-list>li{margin:1rem;list-style:none}a{text-decoration:none}.hide{display:block}
