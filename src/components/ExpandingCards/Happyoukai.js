@@ -20,26 +20,22 @@ function Happyoukai() {
   return (
     <div className='picture__wrapper'>
       <div className='panel__container'>
-        <div
-          className='panel active'
+        <div className='panel active'
           style={{ backgroundImage: `url(require("../../img/happyoukai-10"))` }}
         >
           <h3>Picture1</h3>
         </div>
-        <div
-          className='panel'
+        <div className='panel'
           style={{ backgroundImage: `url(require("../../img/happyoukai-5"))` }}
         >
           <h3>Picture2</h3>
         </div>
-        <div
-          className='panel'
+        <div className='panel'
           style={{ backgroundImage: `url(require("../../img/happyoukai-6"))` }}
         >
           <h3>Picture3</h3>
         </div>
-        <div
-          className='panel'
+        <div className='panel'
           style={{ backgroundImage: `url(require("../../img/happyoukai-7"))` }}
         >
           <h3>Picture4</h3>
