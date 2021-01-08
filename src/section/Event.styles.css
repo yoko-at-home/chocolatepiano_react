@@ -12,38 +12,6 @@ margin-top:-10rem}}
   background-color:#f7f7f7;
   padding:15rem 0;
 }
-.lesson__wrapper{
-  position: relative;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.photo_wrapper{
-  display: flex;
-  flex-direction: column;
-}
-@media only screen and (min-width:900px){
-.section-activity{padding:10rem 0}
-.lesson__wrapper{
-  margin: 3rem auto;
-  display: block;
-  max-width: 900px;
-}
-.subsection__wrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 300px;
-}
-.photo_wrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-}
 .row-event{
 max-width:50rem;
 padding:0 3rem;

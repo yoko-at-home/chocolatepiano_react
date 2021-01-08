@@ -7,10 +7,8 @@ import './Profile.styles.css'
 function ProfileSection() {
   return (
     <>
-      <div className='u-center-text u-margin-bottom-big'>
-        <h2 className='heading-secondary' style={{fontSize:'5rem'}}>
-          ご挨拶
-        </h2>
+      <div style={{display:'flex'}}>
+      <h2 className='profile__title'>ご挨拶</h2>
       </div>
       <section
         className='section-stories u-margin-bottom-big'
@@ -44,7 +42,7 @@ function ProfileSection() {
               <h3 className='heading-tertiary u-margin-bottom-small'>
                 ショコラピアノ教室のホームページへようこそ！
               </h3>
-              <p style={{color:'#333'}}>
+              <p style={{ color: '#333' }}>
                 ショコラピアノ教室講師、鳥越文（とりごえあや）です。ショコラピアノ教室は、相模原市南区大野台・古淵にあるアットホームなピアノ教室です。響きのよいグランドピアノをグランドピアノの豊かな響きを存分に味わいながら音楽表現ができます。また、個人レッスンなので、1人 １人それぞれのペースに合わせてレッスンする事が出来ます♪少しでもピアノが音楽が楽しい！！と感じていただけたら・・・と思いレッスンしています♪
               </p>
             </div>

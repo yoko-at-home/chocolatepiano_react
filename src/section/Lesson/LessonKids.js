@@ -21,25 +21,25 @@ function LessonKids() {
             <div className='subsection__wrapper'>
               <h2 className='kids__title-sub'>レッスン風景</h2>
               <div className="photo_wrapper">
-              <div className='row-kids'>
-                  <div className='kids_composition'>
-                    <img
-                      src={kids2}
-                      alt='ショコラピアノ教室 子供たちのレッスン風景1'
-                      className='kids_composition__photo kids_composition__photo--p1'
-                    />
-                    <img
-                      src={kids1}
-                      alt='ショコラピアノ教室 子供たちのレッスン風景2'
-                      className='kids_composition__photo kids_composition__photo--p2'
-                    />
-                    <img
-                      src={kids4}
-                      alt='ショコラピアノ教室 子供たちのレッスン風景3'
-                      className='kids_composition__photo kids_composition__photo--p3'
-                    />
-                </div>
-                </div>
+                <div className='row-kids'>
+                    <div className='kids_composition'>
+                      <img
+                        src={kids2}
+                        alt='ショコラピアノ教室 子供たちのレッスン風景1'
+                        className='kids_composition__photo kids_composition__photo--p1'
+                      />
+                      <img
+                        src={kids1}
+                        alt='ショコラピアノ教室 子供たちのレッスン風景2'
+                        className='kids_composition__photo kids_composition__photo--p2'
+                      />
+                      <img
+                        src={kids4}
+                        alt='ショコラピアノ教室 子供たちのレッスン風景3'
+                        className='kids_composition__photo kids_composition__photo--p3'
+                      />
+                    </div>
+                  </div>
                 <div className='row-kids'>
                   <div className='kids_composition'>
                     <img
@@ -58,7 +58,7 @@ function LessonKids() {
                       className='kids_composition__photo kids_composition__photo--p3'
                     />
                 </div>
-              </div>
+               </div>
               </div>
             </div>
           </div>
