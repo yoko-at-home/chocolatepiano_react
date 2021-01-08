@@ -207,38 +207,6 @@ font-weight:400;
 line-height:1.7;
 color:#777}
 
-.bg-mobile__content{height:100%;
-width:100%;
--o-object-fit:cover;
-object-fit:cover}
-.bg-mobile{background-image:url(../img/video-mobile.jpg);
-background-size:cover ;
-background-position:center;
-position:absolute;
-top:0;
-left:0;
-height:7rem;
-width:100%;
-z-index:-1;
-overflow:hidden}
-.bg-mobile__content{height:100%;
-width:100%;
--o-object-fit:cover;
-object-fit:cover}
-@media(min-width:415px){.bg-mobile{display:none}}
-.bg-video{display:none}
-@media(min-width:415px){.bg-video{display:block;
-position:absolute;
-top:0;
-left:0;
-height:100%;
-width:100%;
-z-index:-1;
-overflow:hidden}
-.bg-video__content{height:100%;
-width:100%;
--o-object-fit:cover;
-object-fit:cover}}
 .btn,.btn:link,.btn:visited{text-transform:uppercase;
 text-decoration:none;
 padding:1.5rem 4rem;
@@ -331,7 +299,7 @@ transition:all .2s;
 outline-offset:2rem}
 @media only screen and (max-width:56.25em){.composition__photo{float:left;
 position:relative;
-width:33.33333333%;
+width:33.33333%;
 -webkit-box-shadow:0 1.5rem 3rem rgba(0,0,0,.2);
 box-shadow:0 1.5rem 3rem rgba(0,0,0,.2)}}
 .composition__photo_bottom{float:center;

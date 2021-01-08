@@ -1,4 +1,4 @@
-.story{width:75%;
+.profile{width:75%;
 margin:0 auto;
 -webkit-box-shadow:0 3rem 6rem rgba(0,0,0,.1);
 box-shadow:0 3rem 6rem rgba(0,0,0,.1);
@@ -12,10 +12,10 @@ transform:skewX(-12deg)}
 .section-stories{position:relative;height:700px;
 padding:15rem 0}
 @media only screen and (max-width:56.25em){.section-stories{padding:10rem 0}}
-@media only screen and (max-width:56.25em){.story{width:100%;
+@media only screen and (max-width:56.25em){.profile{width:100%;
 padding:4rem;
 padding-left:7rem}}
-@media only screen and (max-width:37.5em){.story{-webkit-transform:skewX(0);
+@media only screen and (max-width:37.5em){.profile{-webkit-transform:skewX(0);
 transform:skewX(0)}}
 .profile__title{
   text-align: center;
@@ -39,7 +39,7 @@ transition:all .2s
 .profile__title:hover{-webkit-transform:skewY(2deg) skewX(15deg) scale(1.1);
 transform:skewY(2deg) skewX(15deg) scale(1.1);
 text-shadow:.5rem 1rem 2rem rgba(0,0,0,.2)}
-.story__shape{width:15rem;
+.profile__shape{width:15rem;
 height:15rem;
 float:left;
 -webkit-transform:translateX(-3rem) skewX(12deg);
@@ -48,15 +48,15 @@ position:relative;
 overflow:hidden;
 border-radius:50%}
 @supports (-webkit-clip-path:polygon(0 0)) or (clip-path:polygon(0 0)) or (-webkit-clip-path:polygon(0 0)){
-  .story__shape{-webkit-clip-path:circle(50% at 50% 50%);
+  .profile__shape{-webkit-clip-path:circle(50% at 50% 50%);
 clip-path:circle(100% at 50% 50%);
 -webkit-shape-outside:circle(50% at 50% 50%);
 shape-outside:circle(50% at 50% 50%);
 border-radius:none}}
 @media only screen and (max-width:37.5em){
-  .story__shape{-webkit-transform:translateX(-3rem) skewX(0);
+  .profile__shape{-webkit-transform:translateX(-3rem) skewX(0);
 transform:translateX(-3rem) skewX(0)}}
-.story__img{height:100%;
+.profile__img{height:100%;
 -webkit-transform:translateX(2rem) scale(1.4);
 transform:translateX(2rem) scale(1.4);
 -webkit-backface-visibility:hidden;
@@ -64,12 +64,12 @@ backface-visibility:hidden;
 -webkit-transition:all .5s;
 background-position: top;
 transition:all .5s}
-.story__text {-webkit-transform:skewX(12deg);
+.profile__text {-webkit-transform:skewX(12deg);
   color:#333;
 transform:skewX(12deg)}
-@media only screen and (max-width:37.5em){.story__text{-webkit-transform:skewX(0);color:#333;
+@media only screen and (max-width:37.5em){.profile__text{-webkit-transform:skewX(0);color:#333;
 transform:skewX(0)}}
-/* .story__caption{position:absolute;
+/* .profile__caption{position:absolute;
 top:50%;
 left:50%;
 -webkit-transform:translate(-50%,20%);
@@ -83,10 +83,10 @@ opacity:0;
 transition:all .5s;
 -webkit-backface-visibility:hidden;
 backface-visibility:hidden} */
-/* .story:hover .story__caption{opacity:1;
+/* .profile:hover .profile__caption{opacity:1;
 -webkit-transform:translate(-50%,-50%);
 transform:translate(-50%,-50%)} */
-.story:hover .story__img{-webkit-transform:translateX(-4rem) scale(1);
+.profile:hover .profile__img{-webkit-transform:translateX(-4rem) scale(1);
 transform:translateX(-4rem) scale(1);
 -webkit-filter:blur(3px) brightness(80%);
 filter:blur(3px) brightness(50%)}
@@ -94,3 +94,44 @@ filter:blur(3px) brightness(50%)}
 padding:10rem 0;
 font-size:1.4rem;
 color:#f7f7f7}
+
+bg-mobile__content{height:100%;
+width:100%;
+-o-object-fit:cover;
+object-fit:cover}
+.bg-mobile{
+background-image:url(../img/video-mobile.jpg);
+background-size:cover ;
+background-position:center;
+position:absolute;
+top:0;
+left:0;
+height:100%;
+width:100%;
+z-index:-1;
+overflow:hidden
+}
+.bg-mobile__content{
+height:100%;
+width:100%;
+-o-object-fit:cover;
+object-fit:cover
+}
+@media(min-width:414px){
+.bg-mobile{display:none}}
+.bg-video{display:none}
+@media(min-width:415px){
+.bg-video{
+display:block;
+position:absolute;
+top:0;
+left:0;
+height:100%;
+width:100%;
+z-index:-1;
+overflow:hidden}
+.bg-video__content{
+  height:100%;
+width:100%;
+-o-object-fit:cover;
+object-fit:cover}}

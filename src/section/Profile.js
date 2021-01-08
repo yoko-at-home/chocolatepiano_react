@@ -26,19 +26,19 @@ function ProfileSection() {
         </div>
 
         <div className='row'>
-          <div className='story'>
-            <figure className='story__shape'>
+          <div className='profile'>
+            <figure className='profile__shape'>
               <img
                 src={AyaTorigoe}
                 alt='とりごえ あや'
-                className='story__img'
+                className='profile__img'
               />
-              <figcaption className='story__caption'>
+              <figcaption className='profile__caption'>
                 講師: <br />
                 とりごえ あや
               </figcaption>
             </figure>
-            <div className='story__text'>
+            <div className='profile__text'>
               <h3 className='heading-tertiary u-margin-bottom-small'>
                 ショコラピアノ教室のホームページへようこそ！
               </h3>

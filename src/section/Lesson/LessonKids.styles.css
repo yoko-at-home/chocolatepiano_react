@@ -15,6 +15,7 @@
 }
 .photo_wrapper{
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 @media only screen and (min-width:900px){
@@ -39,8 +40,9 @@
 }
 }
 .row-kids{max-width:50rem;
-padding:0 3rem;
-margin-left:1rem;}
+padding:0;
+/* margin-left:1.2rem; */
+}
 .row-kids:not(:last-child){margin-bottom:8rem}
  @media only screen and (max-width:56.25em){
 .row-kids:not(:last-child){margin-bottom:6rem}
@@ -58,7 +60,7 @@ margin-bottom:6rem}
 .row-kids .col-1-of-2{width:calc((100% - 3rem)/ 2)}
 .kids_composition{
 position:relative;
-width:350px}
+width:390px}
 .kids_composition__photo{
 -webkit-box-shadow:0 1.5rem 4rem rgba(0,0,0,.4);
 box-shadow:0 1.5rem 4rem rgba(0,0,0,.4);
@@ -67,11 +69,18 @@ position:absolute;
 z-index:10;
 -webkit-transition:all .2s;
 transition:all .2s;
-outline-offset:2rem;
+/* outline-offset:2rem; */
 float:left;
 position:relative;
-width:33.33333333%;
+width:29%;
 box-shadow:0 1.5rem 3rem rgba(0,0,0,.2)
+}
+@media(min-width:600px){
+  .kids_composition__photo{
+outline-offset:2rem;
+width:33.33333%;
+
+}
 }
 .kids_composition__photo--p1{
 top:0;
@@ -116,11 +125,9 @@ letter-spacing:.2rem;
 -webkit-transition:all .2s;
 transition:all .2s
 }
-
 .kids__title :hover{-webkit-transform:skewY(2deg) skewX(15deg) scale(1.1);
 transform:skewY(2deg) skewX(15deg) scale(1.1);
 text-shadow:.5rem 1rem 2rem rgba(0,0,0,.2)}
-
 .kids__title-sub{
   margin:3rem auto;
   font-size:4rem;
