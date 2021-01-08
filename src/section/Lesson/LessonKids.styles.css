@@ -59,6 +59,14 @@ margin-bottom:6rem}
 position:relative;
 width:350px}
 .kids_composition__photo{
+-webkit-box-shadow:0 1.5rem 4rem rgba(0,0,0,.4);
+box-shadow:0 1.5rem 4rem rgba(0,0,0,.4);
+border-radius:2px;
+position:absolute;
+z-index:10;
+-webkit-transition:all .2s;
+transition:all .2s;
+outline-offset:2rem;
 float:left;
 position:relative;
 width:33.33333333%;
