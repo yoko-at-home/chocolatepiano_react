@@ -21,19 +21,19 @@ function ChristmasParty() {
       <div className='panel__container'>
         <div
           className='panel active'
-          style={{ backgroundImage: `url(require("../../img/christmas-3"))` }}
+          style={{ backgroundImage: `url(require("../../img/christmas-3.jpg"))` }}
         >
           <h3>クリスマス会1</h3>
         </div>
         <div
           className='panel'
-          style={{ backgroundImage: `url(require("../../img/christmas-2"))` }}
+          style={{ backgroundImage: `url(require("../../img/christmas-2.jpg"))` }}
         >
           <h3>クリスマス会2</h3>
         </div>
         <div
           className='panel'
-          style={{ backgroundImage: `url(require("../../img/christmas-1"))` }}
+          style={{ backgroundImage: `url(require("../../img/christmas-1.jpg"))` }}
         >
           <h3>クリスマス会3</h3>
         </div>

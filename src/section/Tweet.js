@@ -4,7 +4,7 @@ function TweetSection () {
   const URL = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v9.0'
   const FacebookURL = 'https://www.facebook.com/chocolatpianoa'
   return (
-    <section className="section-tweet" id="tweet">
+    <section className="section-tweet" id="info">
         <div className="u-center-text u-margin-bottom-big">
           <h2 className="heading-secondary" style="font-size:4rem">
              ショコラピアノ教室からのお知らせ

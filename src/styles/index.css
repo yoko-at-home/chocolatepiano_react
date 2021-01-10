@@ -488,10 +488,3 @@ margin-top:-10rem}}
   padding-left: 0;
 }
 }
-
-/* 携帯にのみ表示 */
-@media(min-width:900px){
-  .hide {
-  display:none;
-}
-}

@@ -1,6 +1,6 @@
 import './styles/index.css'
 
-import HeaderSection from './section/Header'
+import Landing from './pages/Landing'
 import ProfileSection from './section/Profile'
 import Lesson from './section/Lesson'
 import EventSection from './section/Event'

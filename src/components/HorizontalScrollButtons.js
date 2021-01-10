@@ -42,7 +42,7 @@ function HorizontalScrollButtons() {
           </Link>
         </li>
         <li>
-          <Link to='/#tweet' className='btn btn--pink btn--animated'>
+          <Link to='/#inof' className='btn btn--pink btn--animated'>
             お知らせ
           </Link>
         </li>
