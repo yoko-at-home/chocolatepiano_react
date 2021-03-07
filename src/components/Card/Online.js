@@ -7,7 +7,7 @@ function CardOnline() {
     <div className='card'>
       <div className='card__side card__side--front'>
         <div className='card__picture card__picture--4'>&nbsp;</div>
-        <h4 className='card__heading'></h4>
+        <h4 className='card__heading'>&nbsp;</h4>
         <div className='card__details'>
           <ul>
             <li>
