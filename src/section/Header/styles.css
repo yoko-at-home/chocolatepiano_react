@@ -1,7 +1,7 @@
 .header{
   height:85vh;
-background-image:-webkit-gradient(linear,left top,right bottom,from(rgba(189,224,132,.3)),to(rgba(157,40,180,.3))),url(../img/hero.jpg);
-background-image:linear-gradient(to right bottom,rgba(177,213,111,.3),rgba(157,40,180,.5)),url(../img/hero.jpg);
+background-image:-webkit-gradient(linear,left top,right bottom,from(rgba(189,224,132,.3)),to(rgba(157,40,180,.3))),url(../../img/hero.jpg);
+background-image:linear-gradient(to right bottom,rgba(177,213,111,.3),rgba(157,40,180,.5)),url(../../img/hero.jpg);
 background-size:cover;
 background-position:top;
 position:relative}
@@ -11,8 +11,8 @@ clip-path:polygon(0 0,100% 0,100% 85vh,0 100%);
 height:95vh} */
 }
 @media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:37.5em),only screen and (min-resolution:192dpi) and (min-width:37.5em),only screen and (min-width:125em){
-  .header{background-image:-webkit-gradient(linear,left top,right bottom,from(rgba(210,111,213,.3)),to(rgba(140,40,180,.5))),url(../img/hero.jpg);
-background-image:linear-gradient(to right bottom,rgba(126,213,111,.3),rgba(147,40,180,.5)),url(../img/hero.jpg)}}
+  .header{background-image:-webkit-gradient(linear,left top,right bottom,from(rgba(210,111,213,.3)),to(rgba(140,40,180,.5))),url(../../img/hero.jpg);
+background-image:linear-gradient(to right bottom,rgba(126,213,111,.3),rgba(147,40,180,.5)),url(../../img/hero.jpg)}}
 @media only screen and (max-width:37.5em){.header{-webkit-clip-path:polygon(0 0,100% 0,100% 85vh,0 100%);
 clip-path:polygon(0 0,100% 0,100% 85vh,0 100%)}}
 .header__logo-box{position:absolute;

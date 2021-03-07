@@ -120,7 +120,7 @@ object-fit:cover
 @media(min-width:414px){
 .bg-mobile{display:none}}
 .bg-video{display:none}
-@media(min-width:415px){
+@media(min-width:26em){
 .bg-video{
 display:block;
 position:absolute;

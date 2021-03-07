@@ -7,13 +7,12 @@ import './Profile.styles.css'
 function ProfileSection() {
   return (
     <>
-      <div style={{display:'flex'}}>
-      <h2 className='profile__title'>ご挨拶</h2>
+      <div style={{ display: 'flex' }}>
+        <h2 className='profile__title' id='section-profile'>
+          ご挨拶
+        </h2>
       </div>
-      <section
-        className='section-stories u-margin-bottom-big'
-        id='section-profile'
-      >
+      <section className='section-stories u-margin-bottom-big'>
         <div className='bg-video'>
           <video className='bg-video__content' autoPlay muted loop>
             <source src={MP4} type='video/mp4' />
@@ -50,7 +49,7 @@ function ProfileSection() {
         </div>
       </section>
     </>
-  )
+  );
 }
 
 export default ProfileSection

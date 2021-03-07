@@ -1,9 +1,9 @@
 import './styles/index.css'
 
-import Landing from './pages/Landing'
+import HeaderSection from './section/Header';
 import ProfileSection from './section/Profile'
 import Lesson from './section/Lesson'
-import EventSection from './section/Event'
+import EventSection from './section/Event/index';
 import FooterSection from './section/Footer'
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <EventSection />
       <FooterSection />
     </>
-  )
+  );
 }
 
 export default App;

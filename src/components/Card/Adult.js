@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './Card.styles.css'
+import React from 'react';
+import { Link } from 'react-scroll';
+import './styles.css';
 
-function CardAdultLesson() {
+function CardAdult() {
   return (
     <div className='card'>
       <div className='card__side card__side--front'>
@@ -47,7 +47,7 @@ function CardAdultLesson() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default CardAdultLesson
+export default CardAdult;

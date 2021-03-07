@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './Card.styles.css'
+import React from 'react';
+import { Link } from 'react-scroll';
+import './styles.css';
 
-function CardKidsLesson() {
+function CardKids() {
   return (
     <div className='card'>
       <div className='card__side card__side--front'>
@@ -42,7 +42,7 @@ function CardKidsLesson() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default CardKidsLesson
+export default CardKids;

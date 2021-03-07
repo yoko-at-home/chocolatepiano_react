@@ -1,45 +1,39 @@
-import React from 'react'
-import './styles.css'
+import React, { useEffect } from 'react';
+import './styles.css';
 
-function ChristmasParty() {
-      const panels = document.querySelectorAll('.panel')
+function Happyoukai() {
+  useEffect(() => {
+    const panels = document.querySelectorAll('.panel');
 
+    panels.forEach((panel) => {
+      panel.addEventListener('click', () => {
+        removeActiveClasses();
+        panel.classList.add('active');
+      });
+    });
+
+    function removeActiveClasses() {
       panels.forEach((panel) => {
-        panel.addEventListener('click', () => {
-          removeActiveClasses()
-          panel.classList.add('active')
-        })
-      })
+        panel.classList.remove('active');
+      });
+    }
+  });
 
-      function removeActiveClasses() {
-        panels.forEach((panel) => {
-          panel.classList.remove('active')
-        })
-      }
   return (
     <div className='picture__wrapper'>
       <div className='panel__container'>
-        <div
-          className='panel active'
-          style={{ backgroundImage: `url(require("../../img/christmas-3.jpg"))` }}
-        >
-          <h3>クリスマス会1</h3>
+        <div className='panel christmas1 active'>
+          <h3>Picture1</h3>
         </div>
-        <div
-          className='panel'
-          style={{ backgroundImage: `url(require("../../img/christmas-2.jpg"))` }}
-        >
-          <h3>クリスマス会2</h3>
+        <div className='panel christmas2'>
+          <h3>Picture2</h3>
         </div>
-        <div
-          className='panel'
-          style={{ backgroundImage: `url(require("../../img/christmas-1.jpg"))` }}
-        >
-          <h3>クリスマス会3</h3>
+        <div className='panel christmas3'>
+          <h3>Picture3</h3>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default ChristmasParty
+export default Happyoukai;
