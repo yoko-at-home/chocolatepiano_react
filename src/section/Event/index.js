@@ -43,7 +43,6 @@ function EventSection() {
       </div>
 
       <Happyoukai />
-      <HorizontalScrollButtons />
       <div className='row-event'>
         <div className='event_composition'>
           <img
@@ -63,6 +62,7 @@ function EventSection() {
           />
         </div>
       </div>
+      <HorizontalScrollButtons />
 
       <div className='section-activity' id='christmas'>
         <h2 className='event__title'>クリスマス会</h2>

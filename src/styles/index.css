@@ -525,6 +525,7 @@
 }
 html {
   font-size: 62.5%;
+  width: 100vw;
 }
 @media only screen and (max-width: 26em) {
   html {
@@ -547,11 +548,11 @@ html {
   }
 }
 body {
-  /* display: flex; */
+  padding: 0;
+  width: 100vw;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /* padding: 3rem; */
-  background-color: rbga(rgb(247, 140, 238), 0.5);
+  margin: 0;
 }
 @media only screen and (max-width: 56.25em) {
   body {
@@ -702,7 +703,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .composition__photo {
-    float: left;
+    /* float: left; */
     position: relative;
     width: 33.33333%;
     -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
@@ -710,7 +711,7 @@ body {
   }
 }
 .composition__photo_bottom {
-  float: center;
+  /* float: center; */
   margin-bottom: 5rem;
   position: relative;
   width: 28%;

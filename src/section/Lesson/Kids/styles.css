@@ -1,160 +1,207 @@
-.section-kids{
+.section-kids {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color:#f7f7f7;
-  padding:15rem 0;
+  background-color: #f7f7f7;
+  padding: 10rem 0;
 }
-.lesson__wrapper{
+.lesson__wrapper {
   position: relative;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.photo_wrapper{
+.photo_wrapper {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-@media only screen and (min-width:900px){
-.section-kids{padding:10rem 0}
-.lesson__wrapper{
-  margin: 3rem auto;
-  display: flex;
-  flex-direction: column;
-  max-width: 900px;
-}
-.subsection__wrapper{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 300px;
-}
-.photo_wrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-}
-.row-kids{max-width:50rem;
-padding:0;
-/* margin-left:1.2rem; */
-}
-.row-kids:not(:last-child){margin-bottom:8rem}
- @media only screen and (max-width:56.25em){
-.row-kids:not(:last-child){margin-bottom:6rem}
-}
- @media only screen and (max-width:56.25em){
-.row-kids{max-width:50rem;
-padding:0 3rem}}
-.row-kids::after{content:"";
-display:table;
-clear:both}
-.row-kids [class^=col-]{float:left}
-.row-kids [class^=col-]:not(:last-child){margin-right:6rem}
-  .row-kids [class^=col-]:not(:last-child){margin-right:0;
-margin-bottom:6rem}
-.row-kids .col-1-of-2{width:calc((100% - 3rem)/ 2)}
-.kids_composition{
-position:relative;
-width:390px}
-.kids_composition__photo{
--webkit-box-shadow:0 1.5rem 4rem rgba(0,0,0,.4);
-box-shadow:0 1.5rem 4rem rgba(0,0,0,.4);
-border-radius:2px;
-position:absolute;
-z-index:10;
--webkit-transition:all .2s;
-transition:all .2s;
-/* outline-offset:2rem; */
-float:left;
-position:relative;
-width:29%;
-box-shadow:0 1.5rem 3rem rgba(0,0,0,.2)
-}
-@media(min-width:600px){
-  .kids_composition__photo{
-outline-offset:2rem;
-width:33.33333%;
-
-}
-}
-.kids_composition__photo--p1{
-top:0;
--webkit-transform:scale(1.2);
-transform:scale(1.2)}
-.kids_composition__photo--p2{
-top:-1rem;
-transform:scale(1.3);
-z-index:100}
-/* } */
-.kids_composition__photo--p3{
-left:20%;
-top:10rem}
-.kids_composition__photo--p3{
-top:1rem;
-left:0;
-transform:scale(1.1)}
-.kids_composition__photo:hover{
-outline:1.5rem solid #c0d175;
--webkit-transform:scale(1.05) translateY(-.5rem);
-transform:scale(1.05) translateY(-.5rem);
--webkit-box-shadow:0 2.5rem 4rem rgba(0,0,0,.5);
-box-shadow:0 2.5rem 4rem rgba(0,0,0,.5);
-z-index:20}
-.kids_composition:hover
-.kids_composition__photo:not(:hover){-webkit-transform:scale(.95);
-transform:scale(.95)}
-.kids__title{
-  margin:0 auto;
-  margin-top: 0;
-  margin-bottom:2rem;
-  font-size:5rem;
-text-transform:uppercase;
-font-weight:700;
-display:inline-block;
-background-image:gradient(linear,left top,right top,from(#f040e7),to(#acdd52));
-background-image:linear-gradient(to right,#acdd52,#db7bf3);
-background-clip:text;
--webkit-background-clip:text;
-color:transparent;
-letter-spacing:.2rem;
--webkit-transition:all .2s;
-transition:all .2s
-}
-.kids__title :hover{-webkit-transform:skewY(2deg) skewX(15deg) scale(1.1);
-transform:skewY(2deg) skewX(15deg) scale(1.1);
-text-shadow:.5rem 1rem 2rem rgba(0,0,0,.2)}
-.kids__title-sub{
-  margin:3rem auto;
-  font-size:4rem;
-font-weight:700;
-display:inline-block;
-background-image:gradient(linear,left top,right top,from(#f040e7),to(#acdd52));
-background-image:linear-gradient(to right,#acdd52,#db7bf3);
-background-clip:text;
--webkit-background-clip:text;
-color:transparent;
-letter-spacing:.2rem;
--webkit-transition:all .2s;
-transition:all .2s
-}
-.subsection__wrapper{
-  position:relative;
-  display: flex;
-  flex-direction:column;
   /* align-items: center; */
+  flex-direction: column;
+}
+@media only screen and (min-width: 900px) {
+  .section-kids {
+    padding: 10rem 0;
+  }
+  .lesson__wrapper {
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+  }
+  /* .subsection__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    width: 100vw;
+  } */
+  .photo_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0;
+  }
+}
+.row-kids {
+  /* max-width:50rem; */
+  padding: 0;
+  margin:5rem 6rem;
+}
+/* .row-kids:not(:last-child) {
+  margin-bottom: 8rem;
+} */
+/* @media only screen and (max-width: 56.25em) {
+  .row-kids:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+} */
+/* @media only screen and (max-width: 56.25em) {
+  .row-kids {
+    padding: 0;
+  }
+} */
+/* .row-kids::after {
+  content: '';
+  display: table;
+  clear: both;
+} */
+/* .row-kids [class^='col-'] {
+  float: left;
+} */
+.row-kids [class^='col-']:not(:last-child) {
+  margin-right: 6rem;
+}
+.row-kids [class^='col-']:not(:last-child) {
+  margin-right: 0;
+  margin-bottom: 6rem;
+}
+.row-kids .col-1-of-2 {
+  width: calc((100% - 3rem) / 2);
+}
+.kids_composition {
+  /* background-color: #acdd52; */
+  position: relative;
+  height: 150px;
+  margin: 2rem auto;
+  width: 100vw;
+}
+.kids_composition__photo {
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  bottom: 0;
+  z-index: 10;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  outline-offset:1.5rem;
+  /* float: left; */
+  width: 29%;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 600px) {
+  .kids_composition__photo {
+    border-radius: 5px;
+    width: 33.33333%;
+  }
+}
+.kids_composition__photo--p1 {
+  position: absolute;
+  top: -1rem;
+  left: 5%;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.kids_composition__photo--p2 {
+  position: absolute;
+  top: 8rem;
+  right: 40%;
+  transform: scale(1.3);
+  z-index: 100;
 }
 
-.kids__title-sub:hover{transform:skewY(2deg) skewX(15deg) scale(1.1);
-transform:skewY(2deg) skewX(15deg) scale(1.1);
-text-shadow:.5rem 1rem 2rem rgba(0,0,0,.2)}
+.kids_composition__photo--p3 {
+  position: absolute;
+  top: -1rem;
+  right: 25%;
+  transform: scale(1.1);
+}
 
-.kids__top-title{
-  text-align:center!important;
-  margin-bottom:2rem;
+.kids_composition__photo:hover {
+  outline: 1rem solid #c0d175;
+  -webkit-transform: scale(1.05) translateY(-0.5rem);
+  transform: scale(1.05) translateY(-0.5rem);
+  -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+.kids_composition:hover .kids_composition__photo:not(:hover) {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.kids__title {
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: gradient(
+    linear,
+    left top,
+    right top,
+    from(#f040e7),
+    to(#acdd52)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.kids__title :hover {
+  -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.kids__title-sub {
+  margin: 3rem auto;
+  font-size: 4rem;
+  font-weight: 700;
+  display: inline-block;
+  background-image: gradient(
+    linear,
+    left top,
+    right top,
+    from(#f040e7),
+    to(#acdd52)
+  );
+  background-image: linear-gradient(to right, #acdd52, #db7bf3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.subsection__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin:0;
+  padding:0;
+}
 
+.kids__title-sub:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.kids__top-title {
+  text-align: center !important;
+  margin-bottom: 2rem;
 }

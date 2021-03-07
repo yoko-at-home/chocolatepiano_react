@@ -12,7 +12,9 @@ import CardKids from '../../../components/Card/Kids';
 function LessonKids() {
   return (
     <>
+      <br />
       <HorizontalScrollButtons />
+      <br />
       <section className='section-kids'>
         <h1 className='kids__title' id='kid'>
           子供のレッスン
