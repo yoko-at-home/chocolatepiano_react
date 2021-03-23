@@ -10,7 +10,7 @@ function HorizontalScrollButtons() {
           <Link
             className='btn btn--pink btn--animated'
             activeClass='active'
-            to='#'
+            to='top'
             spy={true}
             smooth={true}
             offset={-70}

@@ -6,9 +6,9 @@ import happyoukai3 from '../../img/happyoukai-3.jpg';
 import happyoukai4 from '../../img/happyoukai-4.jpg';
 import Happyoukai from '../../components/ExpandingCards/Happyoukai';
 import ChristmasParty from '../../components/ExpandingCards/ChristmasParty';
-import Activity from '../../components/ExpandingCards/Acitvity';
 
 import HorizontalScrollButtons from '../../components/HorizpntalScrollButtons';
+import EventImageSlider from '../../components/Slider/Event';
 
 function EventSection() {
   return (
@@ -75,7 +75,7 @@ function EventSection() {
       <div className='section-activity' id='activity'>
         <h2 className='event__title'>講師演奏活動</h2>
         <p className='event__text'>&nbsp;</p>
-        <Activity />
+        <EventImageSlider />
       </div>
       <HorizontalScrollButtons />
     </section>

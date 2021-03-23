@@ -1,8 +1,8 @@
-import React from 'react'
-import AyaTorigoe from '../img/profile-dress.jpg'
-import MP4 from '../img/video.mp4'
-import Webm from '../img/video.webm'
-import './Profile.styles.css'
+import React from 'react';
+import AyaTorigoe from '../../img/profile-dress.jpg';
+import MP4 from '../../img/video.mp4';
+import Webm from '../../img/video.webm';
+import './styles.css';
 
 function ProfileSection() {
   return (
@@ -52,4 +52,4 @@ function ProfileSection() {
   );
 }
 
-export default ProfileSection
+export default ProfileSection;

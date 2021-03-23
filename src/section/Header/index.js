@@ -1,12 +1,10 @@
 import React from 'react';
 import './styles.css';
-import HorizontalScrollButtons from '../../components/HorizpntalScrollButtons'
 
 function HeaderSection() {
   return (
     <>
-      <HorizontalScrollButtons/>
-      <header className='header u-margin-bottom-big'>
+      <header className='header u-margin-bottom-big' id='top'>
         <div className='header__text-box'>
           <h1 className='heading-primary'>
             <span className='heading-primary--main'>
