@@ -81,7 +81,7 @@ function HorizontalScrollButtons() {
             offset={-70}
             duration={1000}
           >
-            年間行事・イベント
+            イベント
           </Link>
         </li>
         <li>

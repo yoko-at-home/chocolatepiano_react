@@ -14,9 +14,9 @@ function EventSection() {
   return (
     <section className='section-activity'>
       <h1 className='event__title' id='event'>
-        年間行事・イベント
+        イベント
       </h1>
-      <h2 className='event__title'>発表会</h2>
+      <h2 className='event__title-sub'>発表会</h2>
       <h3 className='event__title-sub'>100回の練習より1回の本番</h3>
       <p className='event__text'>
         ショコラピアノ教室では、年に一度近隣のホールで発表会を行っています。本番で得るものは多く、参加する生徒さん皆さん毎回、とても大きな成長を遂げます。
@@ -65,7 +65,7 @@ function EventSection() {
       <HorizontalScrollButtons />
 
       <div className='section-activity' id='christmas'>
-        <h2 className='event__title'>クリスマス会</h2>
+        <h2 className='event__title-sub'>クリスマス会</h2>
         <p className='event__text'>
           12月には生徒さん同士交流してお友達なってほしいな。という願いも込めてリスマス会を開催しております。
         </p>
