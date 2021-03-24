@@ -33,7 +33,7 @@ function Popup() {
                         allowfullscreen=''
                         frameborder='0'
                         ariaHidden='false'
-                        tabindex='0'
+                        tabIndex='0'
                         border='0'
                         width='320px'
                         height='450px'
@@ -69,7 +69,7 @@ function Popup() {
                   href='https://www.facebook.com/chocolatpianoa'
                   class='popup__link'
                   target='_blank'
-                  rel='noopener'
+                  rel='noreferrer'
                 >
                   <img src={facebook} style={{ width: '35px' }} />
                 </a>
@@ -79,7 +79,7 @@ function Popup() {
                   href='https://profile.ameba.jp/ameba/chocolatpianoa/'
                   class='popup__link'
                   target='_blank'
-                  rel='noopener'
+                  rel='noreferrer'
                 >
                   <sup>B l o g</sup>
                 </a>
@@ -89,7 +89,7 @@ function Popup() {
                   href='https://www.instagram.com/chocolatpianoa2019/'
                   class='popup__link'
                   target='_blank'
-                  rel='noopener'
+                  rel='noreferrer'
                 >
                   <img src={Instagram} style={{ width: '35px' }} />
                 </a>

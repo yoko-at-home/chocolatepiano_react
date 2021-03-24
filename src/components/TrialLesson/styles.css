@@ -2,7 +2,7 @@
   height: 90vh;
   width: 100%;
   position: fixed;
-  top: 0;
+  top: 8%;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9999;
@@ -145,18 +145,4 @@
   display: inline-block;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-}
-
-/* map */
-.mapouter {
-  position: relative;
-  text-align: right;
-  height: 400px;
-  width: 320px;
-}
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 400px;
-  width: 320px;
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 // import { Link } from 'react-scroll';
-import TrialLesson from '../TrialLesson'
 import './styles.css';
 
 function CardOnline() {
@@ -34,7 +33,6 @@ function CardOnline() {
           </a>
         </div>
       </div>
-      <TrialLesson />
     </div>
   );
 }

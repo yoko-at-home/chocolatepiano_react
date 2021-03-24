@@ -8,9 +8,9 @@ const TrialLesson = () => {
   return (
     <div className='popup' id='contact-popup'>
       <div className='popup__content'>
-        <div className='popup__left'></div>
+        <div className='popup__left'> </div>
         <div className='popup__right'>
-          <a href='#' className='popup__close'>
+          <a href='#section-profile' className='popup__close'>
             ×
           </a>
           <h2 className='heading-secondary u-margin-bottom-small'>
@@ -40,7 +40,7 @@ const TrialLesson = () => {
                     href='https://www.facebook.com/chocolatpianoa'
                     className='popup__link'
                     target='_blank'
-                    rel='noopener'
+                    rel='noreferrer'
                   >
                     <img src={facebook} style={{ width: '35px' }} />
                   </a>
@@ -50,7 +50,7 @@ const TrialLesson = () => {
                     href='https://profile.ameba.jp/ameba/chocolatpianoa/'
                     className='popup__link'
                     target='_blank'
-                    rel='noopener'
+                    rel='noreferrer'
                   >
                     <sup>B l o g</sup>
                   </a>
@@ -60,7 +60,7 @@ const TrialLesson = () => {
                     href='https://www.instagram.com/chocolatpianoa2019/'
                     className='popup__link'
                     target='_blank'
-                    rel='noopener'
+                    rel='noreferrer'
                   >
                     <img src={Instagram} style={{ width: '35px' }} />
                   </a>

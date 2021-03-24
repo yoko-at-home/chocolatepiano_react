@@ -8,6 +8,7 @@ import Access from './section/Access/';
 import EventSection from './section/Event/index';
 import FooterSection from './section/Footer'
 import Contact from './section/Contact'
+import TrialLesson from './components/TrialLesson';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Access />
       <EventSection />
       <Contact />
+      <TrialLesson />
       <FooterSection />
     </>
   );

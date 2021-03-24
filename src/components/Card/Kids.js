@@ -1,5 +1,4 @@
 import React from 'react';
-import TrialLesson from '../TrialLesson';
 import './styles.css';
 
 function CardKids() {
@@ -41,7 +40,6 @@ function CardKids() {
           </a>
         </div>
       </div>
-      <TrialLesson />
     </div>
   );
 }
