@@ -7,7 +7,7 @@ import Lesson from './section/Lesson'
 import Access from './section/Access/';
 import EventSection from './section/Event/index';
 import FooterSection from './section/Footer'
-import Contact from './section/Contact'
+// import Contact from './section/Contact'
 import TrialLesson from './components/TrialLesson';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <Lesson />
       <Access />
       <EventSection />
-      <Contact />
+      {/* <Contact /> */}
       <TrialLesson />
       <FooterSection />
     </>
