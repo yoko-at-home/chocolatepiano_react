@@ -1,17 +1,17 @@
 import React from 'react';
+import HorizontalScrollButtons from '../../components/HorizpntalScrollButtons';
+import Popup from './popup';
 import './styles.css';
 
 function Access() {
   return (
-    <section className='section-tours' id='section-lesson'>
-      <div className='u-center-text '>
-        <h2 className='heading-secondary' style='font-size:4rem'>
+    <section className='section-tours'>
+        <h2 className='heading-secondary' id='access'>
           アクセス
         </h2>
-      </div>
 
       <div className='row'>
-        <div className='col-1-of-3'>&nbsp;</div>
+        {/* <div className='col-1-of-3'>&nbsp;</div> */}
         <div className='col-1-of-3'>
           <div className='card'>
             <div className='card__side card__side--front'>
@@ -43,15 +43,17 @@ function Access() {
                     </b>
                   </p>
                 </div>
-                <Link to='#popup-access' className='btn btn--white'>
+                <a href='#popup-access' className='btn btn--white'>
                   アクセス
-                </Link>
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div className='col-1-of-3'>&nbsp;</div>
+        {/* <div className='col-1-of-3'>&nbsp;</div> */}
       </div>
+      <Popup />
+      <HorizontalScrollButtons/>
     </section>
   );
 }

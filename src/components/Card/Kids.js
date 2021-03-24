@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+import TrialLesson from '../TrialLesson';
 import './styles.css';
 
 function CardKids() {
@@ -36,11 +36,12 @@ function CardKids() {
               ♪ 上級-ソナチネ- (40分)・・・￥10500
             </p>
           </div>
-          <Link to='#popup' className='btn btn--white'>
+          <a href='#contact-popup' className='btn btn--white'>
             体験レッスン
-          </Link>
+          </a>
         </div>
       </div>
+      <TrialLesson />
     </div>
   );
 }

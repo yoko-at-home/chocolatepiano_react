@@ -1,5 +1,5 @@
 .popup {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   position: fixed;
   top: 0;
@@ -41,7 +41,7 @@
 .popup__left {
   width: 45%;
   display: table-cell;
-  background-image: url(../img/nat-8a.jpg);
+  background-image: url(../../img/nat-8a.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;

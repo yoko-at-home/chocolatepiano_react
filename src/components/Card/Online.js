@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
+import TrialLesson from '../TrialLesson'
 import './styles.css';
 
 function CardOnline() {
@@ -28,11 +29,12 @@ function CardOnline() {
               &nbsp;
             </p>
           </div>
-          <Link to='popup' className='btn btn--white'>
+          <a href='#contact-popup' className='btn btn--white'>
             体験レッスン
-          </Link>
+          </a>
         </div>
       </div>
+      <TrialLesson />
     </div>
   );
 }

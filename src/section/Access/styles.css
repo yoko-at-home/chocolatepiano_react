@@ -41,7 +41,7 @@
 .popup__left {
   width: 45%;
   display: table-cell;
-  background-image: url(../img/nat-8a.jpg);
+  background-image: url(../../img/nat-8a.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -149,7 +149,7 @@
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 15rem 0;
+  padding: 5rem 0;
   margin-top: -10rem;
 }
 @media only screen and (max-width: 56.25em) {
