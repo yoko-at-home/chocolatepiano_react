@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './styles.css';
 
 function Access() {
   return (
@@ -55,4 +56,4 @@ function Access() {
   );
 }
 
-export default Access
+export default Access;

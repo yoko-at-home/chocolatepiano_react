@@ -12,7 +12,7 @@ function ProfileSection() {
           ご挨拶
         </h2>
       </div>
-      <section className='section-stories u-margin-bottom-big'>
+      <section className='section-stories '>
         <div className='bg-video'>
           <video className='bg-video__content' autoPlay muted loop>
             <source src={MP4} type='video/mp4' />

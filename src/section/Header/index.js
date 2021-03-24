@@ -4,7 +4,7 @@ import './styles.css';
 function HeaderSection() {
   return (
     <>
-      <header className='header u-margin-bottom-big' id='top'>
+      <header className='header ' id='top'>
         <div className='header__text-box'>
           <h1 className='heading-primary'>
             <span className='heading-primary--main'>
