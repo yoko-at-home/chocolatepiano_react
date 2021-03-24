@@ -11,10 +11,10 @@ function Contact() {
                 お問い合わせ
               </h2>
             </div>
-            <form name='contact' method='POST' data-netlify='true'>
+            <form name='contact' netlify netlify-honeypot='bot-field'>
               <div className='form__group'>
                 <label htmlFor='subject' className='form__label'>
-                  ショコラピアノ教室ホームページからの問い合わせ
+                  {/* ショコラピアノ教室ホームページからの問い合わせ */}
                   <input
                     type='subject'
                     subject='subject'
