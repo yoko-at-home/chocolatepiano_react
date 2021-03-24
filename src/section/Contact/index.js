@@ -20,6 +20,7 @@ function Contact() {
                     subject='subject'
                     id='subject'
                     placeholder=''
+                    style={{ display: 'none' }}
                   />
                 </label>
               </div>
