@@ -6,6 +6,7 @@ import ProfileSection from './section/Profile'
 import Lesson from './section/Lesson'
 import EventSection from './section/Event/index';
 import FooterSection from './section/Footer'
+import Contact from './section/Contact'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ProfileSection />
       <Lesson />
       <EventSection />
+      <Contact />
       <FooterSection />
     </>
   );

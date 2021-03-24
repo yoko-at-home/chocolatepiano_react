@@ -1,85 +1,159 @@
-.header{
-  height:85vh;
-background-image:-webkit-gradient(linear,left top,right bottom,from(rgba(189,224,132,.3)),to(rgba(157,40,180,.3))),url(../../img/hero.jpg);
-background-image:linear-gradient(to right bottom,rgba(177,213,111,.3),rgba(157,40,180,.5)),url(../../img/hero.jpg);
-background-size:cover;
-background-position:top;
-position:relative}
-@supports (-webkit-clip-path:polygon(0 0)) or (clip-path:polygon(0 0)) or (-webkit-clip-path:polygon(0 0)){
+.header {
+  height: 85vh;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgba(189, 224, 132, 0.3)),
+      to(rgba(157, 40, 180, 0.3))
+    ),
+    url(../../img/hero.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(177, 213, 111, 0.3),
+      rgba(157, 40, 180, 0.5)
+    ),
+    url(../../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+@supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) or
+  (-webkit-clip-path: polygon(0 0)) {
   /* .header{-webkit-clip-path:polygon(0 0,100% 0,100% 85vh,0 100%);
 clip-path:polygon(0 0,100% 0,100% 85vh,0 100%);
 height:95vh} */
 }
-@media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:37.5em),only screen and (min-resolution:192dpi) and (min-width:37.5em),only screen and (min-width:125em){
-  .header{background-image:-webkit-gradient(linear,left top,right bottom,from(rgba(210,111,213,.3)),to(rgba(140,40,180,.5))),url(../../img/hero.jpg);
-background-image:linear-gradient(to right bottom,rgba(126,213,111,.3),rgba(147,40,180,.5)),url(../../img/hero.jpg)}}
-@media only screen and (max-width:37.5em){.header{-webkit-clip-path:polygon(0 0,100% 0,100% 85vh,0 100%);
-clip-path:polygon(0 0,100% 0,100% 85vh,0 100%)}}
-.header__logo-box{position:absolute;
-top:4rem;
-left:4rem}
-.header__text-box{position:absolute;
-top:60%;
-left:50%;
--webkit-transform:translate(-50%,-50%);
-transform:translate(-50%,-50%);
-text-align:center}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  only screen and (min-width: 125em) {
+  .header {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right bottom,
+        from(rgba(210, 111, 213, 0.3)),
+        to(rgba(140, 40, 180, 0.5))
+      ),
+      url(../../img/hero.jpg);
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(126, 213, 111, 0.3),
+        rgba(147, 40, 180, 0.5)
+      ),
+      url(../../img/hero.jpg);
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+}
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+.header__text-box {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
-.heading-primary{color:#fff;
-text-transform:uppercase;
--webkit-backface-visibility:hidden;
-backface-visibility:hidden;
-margin-bottom:6rem}
-.heading-primary--main_mobile{display:block;
-font-size:4rem;
-font-weight:400;
-letter-spacing:1.5rem;
--webkit-animation-name:moveInLeft;
-animation-name:moveInLeft;
--webkit-animation-duration:1s;
-animation-duration:1s;
--webkit-animation-timing-function:ease-out;
-animation-timing-function:ease-out}
-.heading-primary--main{
-  display:none;
-font-size:6rem;
-font-weight:400;
-letter-spacing:2rem;
--webkit-animation-name:moveInLeft;
-animation-name:moveInLeft;
--webkit-animation-duration:1s;
-animation-duration:1s;
--webkit-animation-timing-function:ease-out;
-animation-timing-function:ease-out}
-@media only screen and (min-width:37.5em){
-  .heading-primary--main_mobile{display:none}
-  .heading-primary--main{
-    display:block;
-    letter-spacing:1rem;
-font-family:5rem}}
-.heading-primary--sub{display:block;
-font-size:2rem;
-font-weight:700;
-letter-spacing:1.75rem;
--webkit-animation:moveInRight 1s ease-out;
-animation:moveInRight 1s ease-out}
-@media only screen and (max-width:37.5em){.heading-primary--sub{letter-spacing:.5rem}}
-.heading-secondary{font-size:3.5rem;
-text-transform:uppercase;
-font-weight:700;
-display:inline-block;
-background-image:-webkit-gradient(linear,left top,right top,from(#f040e7),to(#acdd52));
-background-image:linear-gradient(to right,#acdd52,#db7bf3);
--webkit-background-clip:text;
-color:transparent;
-letter-spacing:.2rem;
--webkit-transition:all .2s;
-transition:all .2s}
-@media only screen and (max-width:56.25em){.heading-secondary{font-size:3rem}}
-@media only screen and (max-width:37.5em){.heading-secondary{font-size:2.5rem}}
-.heading-secondary:hover{-webkit-transform:skewY(2deg) skewX(15deg) scale(1.1);
-transform:skewY(2deg) skewX(15deg) scale(1.1);
-text-shadow:.5rem 1rem 2rem rgba(0,0,0,.2)}
-.heading-tertiary{font-size:2rem;
-font-weight:700;
-font-weight:700}
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+.heading-primary--main_mobile {
+  display: block;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1.5rem;
+  -webkit-animation-name: moveInLeft;
+  animation-name: moveInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+.heading-primary--main {
+  display: none;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 2rem;
+  -webkit-animation-name: moveInLeft;
+  animation-name: moveInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+@media only screen and (min-width: 37.5em) {
+  .heading-primary--main_mobile {
+    display: none;
+  }
+  .heading-primary--main {
+    display: block;
+    letter-spacing: 1rem;
+    font-family: 5rem;
+  }
+}
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+  -webkit-animation: moveInRight 1s ease-out;
+  animation: moveInRight 1s ease-out;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--sub {
+    letter-spacing: 0.5rem;
+  }
+}
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#f040e7),
+    to(#acdd52)
+  );
+  background-image: linear-gradient(to right, #acdd52, #db7bf3);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+}
+.heading-secondary:hover {
+  -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 700;
+  font-weight: 700;
+}
