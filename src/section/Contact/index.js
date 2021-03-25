@@ -17,14 +17,14 @@ export default function Contact() {
                   お問い合わせ
                 </h2>
               </div>
-              <form onSubmit={handleSubmit(onSubmit)}>
+              <form onSubmit={handleSubmit(onSubmit)} data-netlify='true'>
                 <p className='form__group'>
                   <input
                     className='form__input'
                     type='text'
                     name='お名前'
                     placeholder={'お名前'}
-                    ref={register}
+                    ref={register({     required:     true     })}
                   />
                 </p>
                 <p className='form__group'>
@@ -33,7 +33,7 @@ export default function Contact() {
                     type='email'
                     name='メールアドレス'
                     placeholder={'メールアドレス'}
-                    ref={register}
+                    ref={register({     required:     true     })}
                   />
                 </p>
                 <p className='form__group'>
@@ -42,12 +42,12 @@ export default function Contact() {
                     rows='7'
                     name='メッセージ'
                     placeholder={'メッセージ'}
-                    ref={register}
+                    ref={register({     required:     true     })}
                   />
                 </p>
                 <p className='form__group form-submit'>
                   <div class='form__group'>
-                    <input type='submit' className='btn btn--green'/>
+                    <input type='submit' className='btn btn--green' />
                   </div>
                 </p>
               </form>
