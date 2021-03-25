@@ -14,6 +14,7 @@ const Lesson = () => {
       <HorizontalScrollButtons />
 
       <LessonOnline />
+      <HorizontalScrollButtons />
     </>
   );
 }

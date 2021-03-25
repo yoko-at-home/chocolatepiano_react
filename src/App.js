@@ -10,6 +10,7 @@ import FooterSection from './section/Footer'
 import Contact from './section/Contact';
 import TrialLesson from './components/TrialLesson';
 import InfoSection from './section/InfoSection';
+import FAQ from './components/FAQ';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <HeaderSection />
       <ProfileSection />
       <Lesson />
+      <FAQ />
       <InfoSection />
       <Access />
       <EventSection />

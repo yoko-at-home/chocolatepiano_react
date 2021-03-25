@@ -75,6 +75,19 @@ function HorizontalScrollButtons() {
           <Link
             className='btn btn--pink btn--animated'
             activeClass='active'
+            to='faq'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+          >
+            よくあるご質問
+          </Link>
+        </li>
+        <li>
+          <Link
+            className='btn btn--pink btn--animated'
+            activeClass='active'
             to='event'
             spy={true}
             smooth={true}
