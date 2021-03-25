@@ -1,84 +1,113 @@
 import React from 'react';
 import './styles.css';
-function Contact() {
-  return (
-    <section className='section-book' id='book-now'>
-      <div className='row'>
-        <div className='book'>
-          <div className='book__form'>
-            <div className='u-margin-bottom-medium'>
-              <h2 className='heading-secondary' style={{ fontSize: '4rem' }}>
-                お問い合わせ
-              </h2>
-            </div>
-            <form name='contact' netlify netlify-honeypot='bot-field'>
-              <div className='form__group'>
-                <label htmlFor='subject' className='form__label'>
-                  {/* ショコラピアノ教室ホームページからの問い合わせ */}
-                  <input
-                    type='subject'
-                    subject='subject'
-                    id='subject'
-                    placeholder=''
-                    style={{ display: 'none' }}
-                  />
-                </label>
-              </div>
-              <div className='form__group'>
-                <input
-                  type='text'
-                  name='name'
-                  className='form__input'
-                  placeholder='お名前'
-                  id='name'
-                  required
-                />
-                <label htmlFor='name' className='form__label'>
-                  お名前
-                </label>
+
+export default class Contact extends React.Component {
+  state = {
+    name: '',
+    email: '',
+    message: '',
+  };
+  handleInputChange = (event) => {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
+    this.setState({
+      [name]: value,
+    });
+  };
+  encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+      )
+      .join('&');
+  };
+  handleSubmit = async (e) => {
+    e.preventDefault();
+    const options = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: this.encode({ 'form-name': 'contactForm', ...this.state }),
+    };
+
+    fetch('/', options)
+      .then(function (response) {
+        window.location.assign('/contact-thanks/');
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
+  render() {
+    return (
+      <section className='section-book' id='book-now'>
+        <div className='row'>
+          <div className='book'>
+            <div className='book__form'>
+              <div className='u-margin-bottom-medium'>
+                <h2 className='heading-secondary' style={{ fontSize: '4rem' }}>
+                  お問い合わせ
+                </h2>
               </div>
 
-              <div className='form__group'>
-                <input
-                  type='email'
-                  name='email'
-                  className='form__input'
-                  placeholder='メールアドレス'
-                  id='email'
-                  required
-                />
-                <label htmlFor='email' className='form__label'>
-                  メールアドレス
-                </label>
-              </div>
-              <div className='form__group'>
-                <label htmlFor='message' className='form_label'>
-                  メッセージ
+              <form
+                name='contactForm'
+                data-netlify='true'
+                id='contact-form'
+                className='contact-form'
+                onSubmit={this.handleSubmit}
+              >
+                <p className='form__group'>
+                  <label htmlFor='name' className='form_label'></label>
+                  <input
+                    type='text'
+                    name='name'
+                    id='name'
+                    className='form__input'
+                    value={this.state.name}
+                    onChange={this.handleInputChange}
+                    placeholder={'お名前'}
+                  />
+                </p>
+                <p className='form__group'>
+                  <label
+                    htmlFor='contant-form-email'
+                    className='form_label'
+                  ></label>
+                  <input
+                    type='email'
+                    name='email'
+                    id='contant-form-email'
+                    className='form__input'
+                    value={this.state.email}
+                    onChange={this.handleInputChange}
+                    placeholder={'メールアドレス'}
+                  />
+                </p>
+                <p className='form__group'>
+                  <label htmlFor='message' className='form_label'></label>
                   <textarea
                     name='message'
-                    className='form__input'
-                    placeholder='メッセージ'
                     id='message'
-                    required
+                    className='form__input'
                     rows='7'
-                  ></textarea>
-                </label>
-              </div>
-              <div className='field'>
-                <div data-netlify-recaptcha='true'></div>
-              </div>
-              <div className='form__group'>
-                <br />
-                <button type='submit' className='btn btn--green'>
-                  送信
-                </button>
-              </div>
-            </form>
+                    value={this.state.message}
+                    onChange={this.handleInputChange}
+                    placeholder={'メッセージ'}
+                  />
+                </p>
+                <p className='form__group form-submit'>
+                  <div class="form__group">
+                  <button type='submit' className='btn btn--green'>
+                    送信
+                  </button>
+                  </div>
+                </p>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  );
+      </section>
+    );
+  }
 }
-
-export default Contact;
