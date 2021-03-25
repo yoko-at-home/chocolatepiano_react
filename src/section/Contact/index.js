@@ -51,7 +51,7 @@ export default class Contact extends React.Component {
               </div>
 
               <form
-                name='contactForm'
+                name='contact'
                 data-netlify='true'
                 id='contact-form'
                 className='contact-form'
@@ -97,10 +97,10 @@ export default class Contact extends React.Component {
                   />
                 </p>
                 <p className='form__group form-submit'>
-                  <div class="form__group">
-                  <button type='submit' className='btn btn--green'>
-                    送信
-                  </button>
+                  <div class='form__group'>
+                    <button type='submit' className='btn btn--green'>
+                      送信
+                    </button>
                   </div>
                 </p>
               </form>
