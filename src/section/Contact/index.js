@@ -1,44 +1,36 @@
 import React from 'react';
 import './styles.css';
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
+
 export default class Contact extends React.Component {
-  state = {
-    name: '',
-    email: '',
-    message: '',
-  };
-  handleInputChange = (event) => {
-    const target = event.target;
-    const value = target.value;
-    const name = target.name;
-    this.setState({
-      [name]: value,
-    });
-  };
-  encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
-      )
-      .join('&');
-  };
-  handleSubmit = async (e) => {
-    e.preventDefault();
-    const options = {
+  constructor(props) {
+    super(props);
+    this.state = { name: '', email: '', message: '' };
+  }
+
+  /* Here’s the juicy bit for posting the form submission */
+
+  handleSubmit = (e) => {
+    fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: this.encode({ 'form-name': 'contactForm', ...this.state }),
-    };
+      body: encode({ 'form-name': 'contact', ...this.state }),
+    })
+      .then(() => alert('送信しました'))
+      .catch((error) => alert(error));
 
-    fetch('/', options)
-      .then(function (response) {
-        window.location.assign('/contact-thanks/');
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    e.preventDefault();
   };
+
+  handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
+
   render() {
+    const { name, email, message } = this.state;
     return (
       <section className='section-book' id='book-now'>
         <div className='row'>
@@ -49,50 +41,34 @@ export default class Contact extends React.Component {
                   お問い合わせ
                 </h2>
               </div>
-
-              <form
-                name='contact'
-                data-netlify='true'
-                id='contact-form'
-                className='contact-form'
-                onSubmit={this.handleSubmit}
-              >
+              <form onSubmit={this.handleSubmit}>
                 <p className='form__group'>
-                  <label htmlFor='name' className='form_label'></label>
                   <input
                     type='text'
                     name='name'
-                    id='name'
+                    value={name}
                     className='form__input'
-                    value={this.state.name}
-                    onChange={this.handleInputChange}
+                    onChange={this.handleChange}
                     placeholder={'お名前'}
                   />
                 </p>
                 <p className='form__group'>
-                  <label
-                    htmlFor='contant-form-email'
-                    className='form_label'
-                  ></label>
                   <input
                     type='email'
                     name='email'
-                    id='contant-form-email'
                     className='form__input'
-                    value={this.state.email}
-                    onChange={this.handleInputChange}
+                    value={email}
+                    onChange={this.handleChange}
                     placeholder={'メールアドレス'}
                   />
                 </p>
                 <p className='form__group'>
-                  <label htmlFor='message' className='form_label'></label>
                   <textarea
-                    name='message'
-                    id='message'
                     className='form__input'
                     rows='7'
-                    value={this.state.message}
-                    onChange={this.handleInputChange}
+                    name='message'
+                    value={message}
+                    onChange={this.handleChange}
                     placeholder={'メッセージ'}
                   />
                 </p>
