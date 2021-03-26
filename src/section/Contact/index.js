@@ -24,7 +24,7 @@ export default function Contact() {
                     type='text'
                     name='お名前'
                     placeholder={'お名前'}
-                    ref={register({     required:     true     })}
+                    ref={register({ required: true })}
                   />
                 </p>
                 <p className='form__group'>
@@ -33,7 +33,7 @@ export default function Contact() {
                     type='email'
                     name='メールアドレス'
                     placeholder={'メールアドレス'}
-                    ref={register({     required:     true     })}
+                    ref={register({ required: true })}
                   />
                 </p>
                 <p className='form__group'>
@@ -42,11 +42,11 @@ export default function Contact() {
                     rows='7'
                     name='メッセージ'
                     placeholder={'メッセージ'}
-                    ref={register({     required:     true     })}
+                    ref={register({ required: true })}
                   />
                 </p>
                 <p className='form__group form-submit'>
-                  <div class='form__group'>
+                  <div classname='form__group'>
                     <input type='submit' className='btn btn--green' />
                   </div>
                 </p>
