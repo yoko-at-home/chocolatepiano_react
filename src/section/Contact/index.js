@@ -22,7 +22,7 @@ export default function Contact() {
                   <input
                     className='form__input'
                     type='text'
-                    name='お名前'
+                    name='name'
                     placeholder={'お名前'}
                     ref={register({ required: true })}
                   />
@@ -31,7 +31,7 @@ export default function Contact() {
                   <input
                     className='form__input'
                     type='email'
-                    name='メールアドレス'
+                    name='email'
                     placeholder={'メールアドレス'}
                     ref={register({ required: true })}
                   />
@@ -40,7 +40,7 @@ export default function Contact() {
                   <textarea
                     className='form__input'
                     rows='7'
-                    name='メッセージ'
+                    name='message'
                     placeholder={'メッセージ'}
                     ref={register({ required: true })}
                   />

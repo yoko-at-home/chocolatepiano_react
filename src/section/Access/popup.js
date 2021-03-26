@@ -32,7 +32,7 @@ function Popup() {
                         src={url}
                         allowFullScreen=''
                         frameBorder='0'
-                        ariaHidden='false'
+                        aria-hidden='false'
                         tabIndex='0'
                         border='0'
                         width='320px'
