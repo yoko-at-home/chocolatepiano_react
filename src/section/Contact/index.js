@@ -46,7 +46,7 @@ export default function Contact() {
                   />
                 </p>
                 <p className='form__group form-submit'>
-                  <div classname='form__group'>
+                  <div className='form__group'>
                     <input type='submit' className='btn btn--green' />
                   </div>
                 </p>

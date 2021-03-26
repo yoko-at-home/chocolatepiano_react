@@ -8,17 +8,17 @@ const url =
 
 function Popup() {
   return (
-    <div classname='popup' id='popup-access'>
-      <div classname='popup__content'>
+    <div className='popup' id='popup-access'>
+      <div className='popup__content'>
         <div
-          classname='popup__center'
+          className='popup__center'
           style={{
             display: 'flex',
             justifyContent: 'center',
             flexDirection: 'column',
           }}
         >
-          <a href='#section-tours' classname='popup__close'>
+          <a href='#section-tours' className='popup__close'>
             ×
           </a>
           <table>
@@ -26,12 +26,12 @@ function Popup() {
               <tr>
                 <td></td>
                 <td style={{ width: '320px' }}>
-                  <div classname='mapouter'>
-                    <div classname='gmap_canvas'>
+                  <div className='mapouter'>
+                    <div className='gmap_canvas'>
                       <iframe
                         src={url}
-                        allowfullscreen=''
-                        frameborder='0'
+                        allowFullScreen=''
+                        frameBorder='0'
                         ariaHidden='false'
                         tabIndex='0'
                         border='0'
@@ -62,32 +62,32 @@ function Popup() {
               </tr>
             </tbody>
           </table>
-          <div classname='popup__navigation'>
-            <ul classname='popup__list'>
-              <li classname='popup__item'>
+          <div className='popup__navigation'>
+            <ul className='popup__list'>
+              <li className='popup__item'>
                 <a
                   href='https://www.facebook.com/chocolatpianoa'
-                  classname='popup__link'
+                  className='popup__link'
                   target='_blank'
                   rel='noreferrer'
                 >
                   <img src={facebook} style={{ width: '35px' }} />
                 </a>
               </li>
-              <li classname='popup__item' style={{ fontSize: 'large' }}>
+              <li className='popup__item' style={{ fontSize: 'large' }}>
                 <a
                   href='https://profile.ameba.jp/ameba/chocolatpianoa/'
-                  classname='popup__link'
+                  className='popup__link'
                   target='_blank'
                   rel='noreferrer'
                 >
                   <sup>B l o g</sup>
                 </a>
               </li>
-              <li classname='popup__item'>
+              <li className='popup__item'>
                 <a
                   href='https://www.instagram.com/chocolatpianoa2019/'
-                  classname='popup__link'
+                  className='popup__link'
                   target='_blank'
                   rel='noreferrer'
                 >
