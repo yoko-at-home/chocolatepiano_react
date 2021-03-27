@@ -70,7 +70,7 @@ function Contact() {
                         pattern: /^\S+@\S+$/i,
                       })}
                     />
-                    {errors.email && 'メールアドレスを入力してください'}
+                    {errors.email && '入力してください'}
                   </p>
                   <p className='form__group'>
                     <textarea
@@ -86,7 +86,7 @@ function Contact() {
                         maxLength: 7,
                       })}
                     />
-                    {errors.message && 'メッセージを入力してください'}
+                    {errors.message && '入力してください'}
                   </p>
                   <p className='form__group form-submit'>
                     <div className='form__group'>
