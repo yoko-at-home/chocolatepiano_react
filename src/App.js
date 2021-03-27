@@ -7,7 +7,7 @@ import Lesson from './section/Lesson'
 import Access from './section/Access/';
 import EventSection from './section/Event/index';
 import FooterSection from './section/Footer'
-import NewsletterForm from './section/NewsletterForm';
+import Contact from './section/Contact';
 import TrialLesson from './components/TrialLesson';
 import InfoSection from './section/InfoSection';
 import FAQ from './components/FAQ';
@@ -23,7 +23,7 @@ function App() {
       <InfoSection />
       <Access />
       <EventSection />
-      <NewsletterForm />
+      <Contact />
       <TrialLesson />
       <FooterSection />
     </>
