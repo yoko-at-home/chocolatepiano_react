@@ -14,7 +14,7 @@
   overflow-x: scroll;
 }
 .horizontal-list > li{
-  margin:1rem;
+  margin:0.5rem;
   list-style: none;
 }
 a {
